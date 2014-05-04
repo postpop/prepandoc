@@ -1,5 +1,7 @@
-
-
+<!--
+!!! csl chicago.csl
+!!! o plan.pdf
+-->
 # preprocess script for pandoc files
 
 - load file provided by argument
