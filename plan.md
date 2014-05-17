@@ -2,9 +2,9 @@
 !!! csl chicago.csl
 !!! o plan.pdf
 -->
-# preprocess script for pandoc files
+# test
 
-- load file provided by argument
-- look for header marked by specific syntax
-- put key-value pairs as command line arguments
-- call pandoc
+- list item 1
+- list item 2
+
+blah

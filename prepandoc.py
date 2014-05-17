@@ -35,6 +35,8 @@ for line in tt:
 		partLine = line[4:].partition(' ')
 		if len(partLine[0])==1:# single character arguments -aval
 			arg = '-' + line[4:].partition(' ')[0] + line[4:].partition(' ')[2]
+		elif len(partLine)==1:
+			arg = '--' + line[4:].partition(' ')[0] 
 		else:# multi-character arguments --arg=val
 			arg = '--' + line[4:].partition(' ')[0] + '=' + line[4:].partition(' ')[2]
 		command.append(arg)
