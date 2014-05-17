@@ -2,7 +2,7 @@
 add command line options for rendering pandoc to the file
 
 NOTES: 
-- syntax: ```!!! argument value```
+- syntax: ```!!! argument value``` or ```!!! argument```
 - wrap options in a block comment to avoid them being rendered
 - need to have pandoc binary in path
 
