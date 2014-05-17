@@ -33,12 +33,13 @@ metaID = "!!!"
 for line in tt:
 	if line.startswith(metaID):
 		partLine = line[4:].partition(' ')
+		print(partLine)
 		if len(partLine[0])==1:# single character arguments -aval
-			arg = '-' + line[4:].partition(' ')[0] + line[4:].partition(' ')[2]
-		elif len(partLine)==1:
-			arg = '--' + line[4:].partition(' ')[0] 
+			arg = '-' + partLine[0] + partLine[2]
+		elif len(partLine[2])==0:
+			arg = '--' + partLine[0] 
 		else:# multi-character arguments --arg=val
-			arg = '--' + line[4:].partition(' ')[0] + '=' + line[4:].partition(' ')[2]
+			arg = '--' + partLine[0] + '=' + partLine[2]
 		command.append(arg)
 print('   ' + str(len(command)-1) + ' instructions found.')
 command.append(fileName)
