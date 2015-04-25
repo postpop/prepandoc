@@ -1,12 +1,13 @@
 # Pandoc preprocessor
-add command line options for rendering pandoc to the file
+Add preamble to specify options for rendering [markdown](http://commonmark.org)/[pandoc](http://pandoc.org) documents.
 
-NOTES: 
-- syntax: ```!!! argument value``` or ```!!! argument```
+# Usage:
+- `python ./prepandoc.py file.md`
+- syntax: `!!! argument value` or `!!! argument`
 - wrap options in a block comment to avoid them being rendered
 - need to have pandoc binary in path
 
-USAGE:
-```
-python ./prepandoc.py file.md
-```
+# Todo: 
+- allow adjusting the verbosity of program output
+
+
